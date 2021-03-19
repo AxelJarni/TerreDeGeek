@@ -16,54 +16,131 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+
 header{
   background-color: #405cff;
+  border-radius: 0 0 1em 1em;
+  margin-top: -1em;
 }
+
 body{
   background-color: #dedede;
 }
+
 footer{
   background-color: #405cff;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: -1.5em;
 }
+
+.head {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+  font-size-adjust: 30%;
+  background-image: url("../assets/Banner.jpg");
+  background-size: cover;
+}
+
 .logo {
   width: 30%;
-  margin-left: 2em;
+  height: 30%;
+  margin-top: 1em;
 }
+
 .menu {
   display: flex;
+  flex-direction: column;
   justify-content: right;
-}
-.nav{
-  display: inline-flex;
   align-items: flex-end;
-  list-style: none;
 }
+
+.nav{
+  padding:0;
+  margin:0;
+  list-style-type:none;
+}
+
 .nav li{
-  display: inline-block;
-  float : none;
-  text-align: center;
-  padding: 0;
-  width : 150%;
-  font-size: 170%;
-  font-weight: bold;
-  justify-content: space-around;
+  margin-left:5px;
+  float:left;
 }
-.nav a{
-  display: inline;
+
+.nav li a{
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  width:100px;
+  background-color:#6495ED;
+  color:black;
+  text-decoration:none;
+  text-align:center;
+  padding:5px;
+  margin: 0.3em 1em 0.2em 2em;
+  border:2px solid;
+  border-radius: 5px;
 }
+
 .search {
   display: inline-flex;
   align-items: flex-end;
   margin: 0.5em;
 }
 
-.productpic{
-  width: 20%;
-}
-
 .productfile {
   border: solid 1px;
   border-radius: 5px;
   width: 80%;
-  margin: 0 10% 5% 10%;
+  margin: 0% 0% 10% 5%;
+  padding: 1em;
+}
+
+.productfile img{
+  float: left;
+  max-width: 170px;
+  max-height: 170px;
+}
+
+.productpageimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  max-height: 250px;
+  padding: 0 2em 0 2em;
+}
+
+.productmain{
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+.description{
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+.techs li{
+  margin-bottom: 0.5em;
+}
+
+.buybutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: #6495ED;
+  font-size: 1.5em;
+  margin: 0.5em 2em 0.5em 2em;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  text-align: center;
 }
