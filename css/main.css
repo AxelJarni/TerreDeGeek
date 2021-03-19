@@ -53,19 +53,19 @@ footer{
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
   padding:0;
   margin:0;
   list-style-type:none;
-}
-
-.nav li{
-  margin-left:5px;
-  float:left;
 }
 
 .nav li a{
@@ -78,7 +78,7 @@ footer{
   text-decoration:none;
   text-align:center;
   padding:5px;
-  margin: 0.3em 1em 0.2em 2em;
+  margin: 0.3em 1em 0.2em 1em;
   border:2px solid;
   border-radius: 5px;
 }
@@ -110,6 +110,7 @@ footer{
   max-width: 250px;
   max-height: 250px;
   padding: 0 2em 0 2em;
+  margin: 0.5em;
 }
 
 .productmain{
@@ -137,10 +138,20 @@ footer{
   margin: 0.5em 2em 0.5em 2em;
 }
 
+.panel1, .panel2, .panel3, .panel4 {
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
 h1{
   color: white;
 }
 
 h2{
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 2em;
 }
