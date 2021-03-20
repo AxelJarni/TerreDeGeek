@@ -10,60 +10,261 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@font-face{
+  font-family: lato;
+  src: url(../Lato/Lato-Regular.ttf);
+}
+
+@font-face{
+  font-family: lato;
+  src: url(../Lato/Lato-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: lato;
+  src: url(../Lato/Lato-Italic.ttf);
+  font-style: italic;
+}
 
 html {
+  font-family: lato, serif;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
+
 header{
   background-color: #405cff;
+  border-radius: 0 0 1em 1em;
+  margin-top: -1em;
 }
+
 body{
   background-color: #dedede;
 }
+
 footer{
   background-color: #405cff;
+  border-radius: 1em 1em 0 0;
+  margin-bottom: -1.5em;
+  text-align: justify;
+  padding: 0 1em 0 1em;
 }
+
+footer li{
+  list-style-type:none;
+  padding: 0.2em;
+}
+
+footer i{
+  font-size: 2em;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.socials a {
+  color: #dedede;
+  font-size: 1.2em;
+  padding: 1em;
+  font-style: italic;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/Banner.jpg");
+  background-size: cover;
+}
+
 .logo {
   width: 30%;
-  margin-left: 2em;
+  height: 30%;
+  margin-top: 1em;
 }
+
 .menu {
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .nav{
-  display: inline-flex;
-  align-items: flex-end;
-  list-style: none;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  
+  padding:0;
+  margin:0;
+  list-style-type:none;
 }
-.nav li{
-  display: inline-block;
-  float : none;
-  text-align: center;
-  padding: 0;
-  width : 150%;
-  font-size: 170%;
-  font-weight: bold;
-  justify-content: space-around;
+
+.nav li a{
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  width:100px;
+  background-color:#6495ED;
+  color:black;
+  text-decoration:none;
+  text-align:center;
+  padding:5px;
+  margin: 0.3em 1em 0.2em 1em;
+  border:2px solid;
+  border-radius: 5px;
 }
-.nav a{
-  display: inline;
-}
+
 .search {
   display: inline-flex;
   align-items: flex-end;
   margin: 0.5em;
 }
 
-.productpic{
-  width: 20%;
-}
-
 .productfile {
   border: solid 1px;
   border-radius: 5px;
   width: 80%;
-  margin: 0 10% 5% 10%;
+  margin: 0% 0% 10% 5%;
+  padding: 1em;
+  text-align: justify;
+  font-size: 1.1em;
+}
+
+.productfile img{
+  float: left;
+  max-width: 170px;
+  max-height: 170px;
+}
+
+.productpageimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  max-height: 250px;
+  padding: 0 2em 0 2em;
+  margin: 0.5em;
+}
+
+.productmain{
+  text-align: justify;
+  padding: 0 1em 0 1em;
+  font-size: 1.1em;
+}
+
+.description{
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+.techs li{
+  margin-bottom: 0.5em;
+}
+
+.shops, footer{
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+.shops li, footer li{
+  list-style-type:none;
+  padding: 0.2em;
+}
+
+.shops a, footer a{
+  text-decoration: none;
+}
+
+.shops a:hover, footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form {
+  margin: 2em;
+}
+
+.form input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #6495ED;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #405cff;
+}
+
+.panel1, .panel2, .panel3, .panel4 {
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  margin-top: 2em;
+}
+
+h4{
+  text-align: center;
+  font-size: 2em;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: #6495ED;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  margin: 1em 25% 0.5em 25%;
+  color: #dedede;
+  }
+
+h4:hover{
+  background-color: #405cff;
+  transform: scale(1.2);
+}
+
+h5{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h6{
+  color: black;
+  font-weight: bold;
+  padding: 0 0 1.5em 0;
+  text-align: center;
 }
