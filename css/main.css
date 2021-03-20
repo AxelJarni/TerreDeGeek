@@ -31,6 +31,32 @@ footer{
   background-color: #405cff;
   border-radius: 1em 1em 0 0;
   margin-bottom: -1.5em;
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+footer li{
+  list-style-type:none;
+  padding: 0.2em;
+}
+
+footer i{
+  font-size: 2em;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.socials a {
+  color: #dedede;
+  font-size: 1.2em;
+  padding: 1em;
+  font-style: italic;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .head {
@@ -127,15 +153,51 @@ footer{
   margin-bottom: 0.5em;
 }
 
-.buybutton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid;
-  border-radius: 20px;
+.shops, footer{
+  text-align: justify;
+  padding: 0 1em 0 1em;
+}
+
+.shops li, footer li{
+  list-style-type:none;
+  padding: 0.2em;
+}
+
+.shops a, footer a{
+  text-decoration: none;
+}
+
+.shops a:hover, footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form {
+  margin: 2em;
+}
+
+.form input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
   background-color: #6495ED;
-  font-size: 1.5em;
-  margin: 0.5em 2em 0.5em 2em;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #405cff;
 }
 
 .panel1, .panel2, .panel3, .panel4 {
@@ -151,7 +213,36 @@ h2{
   text-align: center;
 }
 
-h3 {
+h3{
   text-align: center;
   margin-top: 2em;
+}
+
+h4{
+  text-align: center;
+  font-size: 2em;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: #6495ED;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  margin: 1em 25% 0.5em 25%;
+}
+
+h4:hover{
+  background-color: #405cff;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+h5{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h6{
+  color: black;
+  font-weight: bold;
+  padding: 0 0 1.5em 0;
+  text-align: center;
 }

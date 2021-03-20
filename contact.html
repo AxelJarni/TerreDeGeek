@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="assets/TDGlogoBlack.png">
   <link rel="icon" type="image/png" href="assets/TDGlogoWhite.png" />
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -39,19 +40,20 @@
   </header>
 
   <main>
-    <div class="container">
-        <div class="contact">
+    <div>
+        <div class="productmain">
           <h2>Nous contacter</h2>
           <p>Venez nous voir en magasin, ou n'hésitez pas à nous envoyer un message !</p>
         </div>
-        <div class="row">
-          <div class="column">
-            <img src="../TerreDeGeek/assets/equipeTDG.jpg" alt="Photo de l'équipe de Terre de Geek - Evreux">
+        <div >
+          <div>
+            <a href="../TerreDeGeek/assets/equipeTDG.jpg"><img src="../TerreDeGeek/assets/equipeTDG.jpg" class="productpageimg" alt="Photo de l'équipe de Terre de Geek - Evreux"></a>
           </div>
-          <div class="column">
+          <div class="form">
             <form action="/action_page.php">
               <input type="text" id="prenom" name="prenom" placeholder="Votre prénom...">
               <input type="text" id="nomfamille" name="nomfamille" placeholder="Votre nom de famille...">
+              <input type="text" id="customermail" name="customermail" placeholder="Votre email...">
               <select id="pays" name="pays">                
                 <option value="France">France</option>
                 <option value="Belgique">Belgique</option>
@@ -68,12 +70,12 @@
   <footer>
     <div class="socials">
       <ul>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
       </ul>
     </div>
-    <a href="mentionslegales.html"><h5>Mentions légales</h5></a>
+    <a href="mentionslegales.html"><h6>Mentions légales <br>Copyright © 2021 <br>Terre de Geek SARL <br>27000 Evreux</h6></a>
   </footer>
 </body>
 
