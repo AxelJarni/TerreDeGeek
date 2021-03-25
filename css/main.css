@@ -26,7 +26,10 @@
   src: url(../Lato/Lato-Italic.ttf);
   font-style: italic;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: lato, serif;
   color: #222;
@@ -35,17 +38,11 @@ html {
 }
 
 header{
-  background-color: #405cff;
-  border-radius: 0 0 1em 1em;
-  margin-top: -1em;
-}
-
-body{
-  background-color: #dedede;
+  background-color: #0d1c70;
 }
 
 footer{
-  background-color: #405cff;
+  background-color: #0d1c70;
   border-radius: 1em 1em 0 0;
   margin-bottom: -1.5em;
   text-align: justify;
@@ -79,7 +76,6 @@ footer a:hover {
 .head {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
   justify-content: center;
   align-items: center;
   background-image: url("../assets/Banner.jpg");
@@ -89,7 +85,8 @@ footer a:hover {
 .logo {
   width: 30%;
   height: 30%;
-  margin-top: 1em;
+  max-width: 240px;
+  max-height: 240px;
 }
 
 .menu {
@@ -120,7 +117,7 @@ footer a:hover {
   text-decoration:none;
   text-align:center;
   padding:5px;
-  margin: 0.3em 1em 0.2em 1em;
+  margin: 0.3em 1em;
   border:2px solid;
   border-radius: 5px;
 }
@@ -132,13 +129,22 @@ footer a:hover {
 }
 
 .productfile {
-  border: solid 1px;
-  border-radius: 5px;
+  border: solid 0px;
+  border-radius: 2px;
+  background-color: #f0f0f0;
   width: 80%;
-  margin: 0% 0% 10% 5%;
+  margin: 1em auto;
   padding: 1em;
   text-align: justify;
   font-size: 1.1em;
+}
+
+.productfile p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+ 
 }
 
 .productfile img{
@@ -182,10 +188,6 @@ footer a:hover {
   padding: 0.2em;
 }
 
-.shops a, footer a{
-  text-decoration: none;
-}
-
 .shops a:hover, footer a:hover {
   text-decoration: underline;
   font-weight: bold;
@@ -221,7 +223,7 @@ input[type=submit]:hover {
 
 .panel1, .panel2, .panel3, .panel4 {
   text-align: justify;
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
 }
 
 a{
@@ -234,21 +236,21 @@ h1{
 
 h2{
   text-align: center;
+  margin: 1rem;
 }
 
 h3{
   text-align: center;
-  margin-top: 2em;
+  margin: 0.5em auto;
 }
 
 h4{
   text-align: center;
   font-size: 2em;
-  border: 2px solid;
   border-radius: 20px;
   background-color: #6495ED;
-  padding: 0.2em 0.5em 0.2em 0.5em;
-  margin: 1em 25% 0.5em 25%;
+  padding: 0.2em 0.5em;
+  margin: 1em 25%;
   color: #dedede;
   }
 
@@ -267,4 +269,25 @@ h6{
   font-weight: bold;
   padding: 0 0 1.5em 0;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For desktop: */
+  .head {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em 1em;
+  }
 }
