@@ -129,7 +129,6 @@ footer a:hover {
 }
 
 .productfile {
-  border: solid 0px;
   border-radius: 2px;
   background-color: #f0f0f0;
   width: 80%;
@@ -163,6 +162,18 @@ footer a:hover {
   height: 15em;
   margin: auto;
 }
+.panelImg{
+  max-width: 80vw;
+  height: auto;
+  margin: 1em auto;
+}
+.panel1, .panel2, .panel3, .panel4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
 
 .productmain{
   text-align: justify;
@@ -180,12 +191,16 @@ footer a:hover {
 }
 
 .techs li{
-  margin-bottom: 0.5em;
+  margin: 0.5em 2em;
+}
+.shops ul{
+  width: 15vw;
+  margin: auto;
 }
 
 .shops, footer{
   text-align: justify;
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
 }
 
 .shops li, footer li{
@@ -226,7 +241,7 @@ input[type=submit]:hover {
   background-color: #405cff;
 }
 
-.panel1, .panel2, .panel3, .panel4 {
+.panels {
   text-align: justify;
   padding: 0 1em;
 }
@@ -329,11 +344,14 @@ h6{
     width: 25vw;
     height: auto;
   }
+
+  .morePicImg {
+    max-width: 20em;
+    max-height: auto;
+  }
+
   .productfile h4 {
     width: 50%;
-  }
-  .productfile .buybutton{
-    
   }
 
   .mainPic {
@@ -359,7 +377,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 2em auto;
   }
   .description {
     width: 80vw;
@@ -368,5 +386,24 @@ h6{
     justify-content: center;
     align-items: center;
     margin: auto;
+  }
+  .panel1, .panel3{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .panel2, .panel4{
+    flex-direction: row-reverse;
+  }
+  .panels img {
+    max-width: 40vw;
+  }
+  .panels p {
+    margin: auto 1em;
+  }
+  .techs ul {
+    column-count: 2;
+    column-gap: 4em;
   }
 }
