@@ -149,18 +149,19 @@ footer a:hover {
 
 .productfile img{
   float: left;
-  max-width: 170px;
-  max-height: 170px;
+  min-width: 170px;
+  min-height: 170px;
+  width: 20vw;
+  height: auto;
 }
 
 .productpageimg {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 250px;
-  max-height: 250px;
-  padding: 0 2em 0 2em;
-  margin: 0.5em;
+  width: 15em;
+  height: 15em;
+  margin: auto;
 }
 
 .productmain{
@@ -169,9 +170,13 @@ footer a:hover {
   font-size: 1.1em;
 }
 
+.mainDesc{
+  margin: 1em 0;
+}
+
 .description{
   text-align: justify;
-  padding: 0 1em 0 1em;
+  padding: 0 1em;
 }
 
 .techs li{
@@ -242,6 +247,7 @@ h2{
 h3{
   text-align: center;
   margin: 0.5em auto;
+  font-size: 1.5em;
 }
 
 h4{
@@ -250,8 +256,9 @@ h4{
   border-radius: 20px;
   background-color: #6495ED;
   padding: 0.2em 0.5em;
-  margin: 1em 25%;
-  color: #dedede;
+  margin: 1em auto;
+  color: white;
+  width: 50vw;
   }
 
 h4:hover{
@@ -265,18 +272,25 @@ h5{
 }
 
 h6{
-  color: black;
+  color: #f0f0f0;
   font-weight: bold;
   padding: 0 0 1.5em 0;
   text-align: center;
 }
 
+/* For tablets: */
 @media only screen and (min-width: 768px) {
-  /* For tablets: */
+  .morePic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 }
 
+/* For desktop: */
 @media only screen and (min-width: 1024px) {
-  /* For desktop: */
   .head {
     flex-direction: row;
     justify-content: space-evenly;
@@ -289,5 +303,70 @@ h6{
     flex-direction: row;
     justify-content: space-between;
     margin: 0em 1em;
+  }
+  .allArticle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .productfile{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .productfile p{
+    display: block;
+  }
+  .indexProductCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productPic {
+    width: 25vw;
+    height: auto;
+  }
+  .productfile h4 {
+    width: 50%;
+  }
+  .productfile .buybutton{
+    
+  }
+
+  .mainPic {
+    width: 40%;
+  }
+  .mainDesc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productpageimg{
+    width: 35vw;
+    height: auto;
+  }
+  .mainNoPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .buybutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .description {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
