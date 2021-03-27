@@ -30,5 +30,31 @@ Vous allez réaliser un premier sprint d’une semaine centré sur les spécific
 - Site mis en ligne via une GH page
 - Projet géré via un outil de type Kanban
 
+# UPDATE
+Ajout de features et du responsive 
+
+## Spécifications fonctionnelles :
+- Les pages de l’application sont accessibles, cohérentes et utilisables quelque soit le support de navigation (smartphone, tablette, ordinateur)
+- Possibilité de contacter l’entreprise via une page dédiée avec un formulaire
+- Le formulaire demande les informations suivantes : nom et prénom, numéro de téléphone, email, âge, objet du contact sous forme de dropdown, message. Les objets de contact sont : information, réclamation, partenariat, autre
+- Les vérifications de sécurité suivantes sont effectuées : les champs nom, email, objet et message sont obligatoires. Il faudra vérifier que l’utilisateur entre un numéro de téléphone et un email valides. Le nom et le prénom font entre 2 et 40 caractères.
+- Sur la page dédiée à l’entreprise une vidéo intégrée avant ou à coté du texte de l’entreprise présente l’entreprise (choisissez simplement une vidéo youtube sur une entreprise)
+- Sur une page prestations, un tableau liste les prestations réalisées par l’entreprise avec leur tarif et le nom de la personne en charge.
+- Voici la liste des prestations : réparation de smartphone phone, réparation de tablette, réparation d’ordinateur, commande spéciale, impression 3D.
+- Sur le site l’utilisateur trouve des icônes et des polices chargées par des librairies externes
+
+## Spécifications techniques :
+- Réalisation de wireframes pour toutes les versions du site
+- Structure du site en HTML5
+- Usage d’un BoilerPlate
+- HTML sémantique
+- Présence de commentaires en anglais pour faciliter la lecture du code
+- Définition d’une charte graphique cohérente (3 couleurs maximum)
+- Design moderne et élégant avec un CSS maintenable
+- Respect du principe DRY
+- Présence d’un favicon
+- Code HTML et CSS passés au validateur
+- Site mis en ligne via une GH-page
+- Usage des media query pour la gestion du responsive
 
 
