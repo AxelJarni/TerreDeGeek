@@ -40,7 +40,9 @@ html {
 header{
   background-color: #0d1c70;
 }
-
+main{
+  margin-bottom: 2em;
+}
 footer{
   background-color: #0d1c70;
   border-radius: 1em 1em 0 0;
@@ -117,7 +119,7 @@ footer a:hover {
   text-decoration:none;
   text-align:center;
   padding:5px;
-  margin: 0.3em 1em;
+  margin: 0.5em;
   border:2px solid;
   border-radius: 5px;
 }
@@ -246,6 +248,16 @@ input[type=submit]:hover {
   padding: 0 1em;
 }
 
+table, td, th, tr{
+  background-color: #ececec;
+  border: 10px solid white;
+  border-collapse: collapse;
+  width: 50vw;
+  height: auto;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
 a{
   text-decoration: none;
 }
@@ -256,7 +268,8 @@ h1{
 
 h2{
   text-align: center;
-  margin: 1rem;
+  margin: 1em;
+  font-size: 3em;
 }
 
 h3{
