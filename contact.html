@@ -51,7 +51,8 @@
         <form method="post" action="#">
           <label for="prenom">Votre Prénom :</label><input type="text" id="prenom" name="prenom" placeholder="Ex: Jean" minlength="2" maxlength="40">
           <label for="nom">Votre Nom :</label><input type="text" id="nom" name="nom" placeholder="Ex: BONNEAU" minlength="2" maxlength="40" required>
-          <label for="phone">Votre numéro de téléphone</label><input type="tel" id="phone" name="phone" placeholder="Ex: 0123456789" pattern="[0-9]{10}">
+          <label for="phone">Votre numéro de téléphone :</label><input type="tel" id="phone" name="phone" placeholder="Ex: 0123456789" pattern="[0-9]{10}">
+          <label for="age">Votre age :</label><input type="number" id="age" name="age" min="12" max="130">
           <label for="customermail">Votre Email :</label><input type="text" id="customermail" name="customermail" placeholder="Ex: jean.bonneau@gmail.com" required>
           <label for="objet">Objet de votre message :</label><select id="objet" name="objet" required>                
             <option value="">Information</option>

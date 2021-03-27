@@ -259,6 +259,10 @@ table, td, th, tr{
   font-size: 1.3rem;
 }
 
+iframe {
+  max-width: 90vw;
+}
+
 a{
   text-decoration: none;
 }
