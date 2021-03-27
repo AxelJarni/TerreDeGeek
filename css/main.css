@@ -175,7 +175,7 @@ footer a:hover {
 
 .productmain{
   text-align: justify;
-  padding: auto 1em;
+  padding: 0 1em;
   font-size: 1.1em;
 }
 
@@ -185,7 +185,7 @@ footer a:hover {
 
 .description{
   text-align: justify;
-  padding: auto 1em;
+  padding: 0 1em;
 }
 
 .techs li{
@@ -198,7 +198,7 @@ footer a:hover {
 
 .shops, footer{
   text-align: justify;
-  padding: auto 1em;
+  padding: 0 1em;
 }
 
 .shops li, footer li{
@@ -367,7 +367,6 @@ h6{
   }
   .morePicImg {
     max-width: 20em;
-    max-height: auto;
   }
   .productfile h4 {
     width: 50%;
@@ -425,7 +424,6 @@ h6{
   }
   .form {
     max-width: 50vw;
-    max-height: auto;
   }
   .contactPage{ /*Style to put picture next to form instead of above on desktop*/
     display: flex;
