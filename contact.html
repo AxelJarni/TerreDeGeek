@@ -30,6 +30,7 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="index.html">Produits</a></li>
           <li><a href="aboutus.html">A propos</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="search">
@@ -40,39 +41,37 @@
   </header>
 
   <main>
-    <div>
-        <div class="productmain">  <!-- Inviting customers to contact owner + picture of the team -->
-          <h2>Nous contacter</h2>
-          <p>Venez nous voir en magasin, ou n'hésitez pas à nous envoyer un message !</p>
-        </div>
-        <div >
-          <div>
-            <a href="../TerreDeGeek/assets/equipeTDG.jpg"><img src="../TerreDeGeek/assets/equipeTDG.jpg" class="productpageimg" alt="Photo de l'équipe de Terre de Geek - Evreux"></a>
-          </div>
-          <div class="form"> <!-- Contact form (not working) -->
-            <form action="/action_page.php">
-              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom...">
-              <input type="text" id="nomfamille" name="nomfamille" placeholder="Votre nom de famille...">
-              <input type="text" id="customermail" name="customermail" placeholder="Votre email...">
-              <select id="pays" name="pays">                
-                <option value="France">France</option>
-                <option value="Belgique">Belgique</option>
-                <option value="other">Reste du monde</option>
-              </select>
-              <textarea id="sujet" name="sujet" placeholder="Tapez votre message ici..." style="height:170px"></textarea>
-              <input type="submit" value="Envoyer">
-            </form>
-          </div>
-        </div>
-      </div> 
+    <h2>Nous contacter</h2>
+    <div class="contactPage">
+      <div class="contactDesc">  <!-- Inviting customers to contact owner + picture of the team -->
+        <p>Venez nous voir en magasin, ou n'hésitez pas à nous envoyer un message !</p>
+        <a href="../TerreDeGeek/assets/equipeTDG.jpg"><img src="../TerreDeGeek/assets/equipeTDG.jpg" class="contactTeamPic" alt="Photo de l'équipe de Terre de Geek - Evreux"></a>
+      </div>
+      <div class="form"> <!-- Contact form (not working) -->
+        <form method="post" action="#">
+          <label for="prenom">Votre Prénom :</label><input type="text" id="prenom" name="prenom" placeholder="Ex: Jean" minlength="2" maxlength="40">
+          <label for="nom">Votre Nom :</label><input type="text" id="nom" name="nom" placeholder="Ex: BONNEAU" minlength="2" maxlength="40" required>
+          <label for="phone">Votre numéro de téléphone</label><input type="tel" id="phone" name="phone" placeholder="Ex: 0123456789" pattern="[0-9]{10}">
+          <label for="customermail">Votre Email :</label><input type="text" id="customermail" name="customermail" placeholder="Ex: jean.bonneau@gmail.com" required>
+          <label for="objet">Objet de votre message :</label><select id="objet" name="objet" required>                
+            <option value="Information">Information</option>
+            <option value="Reclamation">Reclamation</option>
+            <option value="Partenariat">Partenariat</option>
+            <option value="Autres">Autres</option>
+          </select>
+          <label for="message">Votre message :</label><textarea id="message" name="message" placeholder="Tapez votre message ici..." required style="height:170px"></textarea>
+          <input type="submit" value="Envoyer">
+        </form>
+      </div>
+    </div> 
   </main>
 
   <footer> <!-- Footer with social links in <div> and legals outside -->
     <div class="socials">
       <ul>
-        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
-        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
     <a href="mentionslegales.html"><h6>Mentions légales <br>Copyright © 2021 <br>Terre de Geek SARL <br>27000 Evreux</h6></a>
