@@ -30,6 +30,7 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="index.html">Produits</a></li>
           <li><a href="aboutus.html">A propos</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="search">
@@ -41,41 +42,55 @@
 
   <main> <!-- Showing the top 3 products sold -->
     <h2>Nos produits stars :</h2>
-    <div class="productfile"> <!-- Product card with borders -->
-      <a href="MacbookAirM1.html"><img src="../TerreDeGeek/assets/MacbookAirM1/MacbookAirM1transparent.png" class="productpic" alt="MacBookAirM1 sur fond transparent"></a>
-      <a href="MacbookAirM1.html"><h3>Apple MacBook Air M1 Gris sidéral 8Go/512 Go (MGN73FN/A)</h3></a>
-      Le MacBook Air, le plus fin et léger des portables Apple, est métamorphosé par la puissante puce Apple M1. 
-      Avec un gain de performances spectaculaire pour le CPU et le GPU. Et jusqu'à 18 heures d'autonomie. 
-      Le portable Apple le plus fin et le plus léger est métamorphosé par la puce Apple M1.
-      <a href="MacbookAirM1.html"><h4>1399€</h4></a> <!-- Price button linking to product page -->
-    </div>
-    <div class="productfile">
-      <a href="RTX3070.html"><img src="../TerreDeGeek/assets/RTX3070/RTX3070transparent.png" class="productpic" alt="RTX3070 sur fond transparent"></a>
-      <a href="RTX3070.html"><h3>Gigabyte GeForce RTX 3070 GAMING OC 8G</h3></a>
-      La carte graphique Gigabyte GeForce RTX 3070 GAMING OC 8G embarque 8 Go de mémoire vidéo de nouvelle génération GDDR6. 
-      Ce modèle overclocké d'usine bénéficie de fréquences de fonctionnement élevées et d'un système de 
-      refroidissement amélioré gage de fiabilité et de performances à long terme.
-      <a href="RTX3070.html"><h4>859€</h4></a>
-    </div>
-    <div class="productfile">
-      <a href="LG27GL850.html"><img src="../TerreDeGeek/assets/LG27GL850/LG27GL850transparent.png" class="productpic" alt="LG27GL850 sur fond transparent"></a>
-      <a href="LG27GL850.html"><h3>LG 27" LED - 27GL850 -B</h3></a>
-      Régnez en maître sur le champ de bataille avec le nouveau moniteur de jeu 27GL850-B signé LG ! 
-      A la pointe de la technologie avec sa dalle 27" Nano-IPS combinant affichage sublime et temps de réponse ultra-rapide 
-      de seulement 1 ms, ce moniteur est prêt à vous propulser vers les sommets !
-      <a href="LG27GL850.html"><h4>499€</h4></a>
+    <div class="allArticle">
+      <article class="productfile"> <!-- Product card with borders -->
+        <div class="indexProductCard">
+          <a href="MacbookAirM1.html"><img src="../TerreDeGeek/assets/MacbookAirM1/MacbookAirM1transparent.png" class="productPic" alt="MacBookAirM1 sur fond transparent"></a>
+          <a href="MacbookAirM1.html"><h3>Apple&nbsp;MacBook Air M1 Gris sidéral 8Go/512 Go</h3></a>
+          <p>Le MacBook Air, le plus fin et léger des portables Apple, est métamorphosé par la puissante puce Apple M1. 
+          Avec un gain de performances spectaculaire pour le CPU et le GPU. Et jusqu'à 18 heures d'autonomie. 
+          Le portable Apple le plus fin et le plus léger est métamorphosé par la puce Apple M1.</p>
+        </div>
+        <div class="priceMain">
+          <a href="MacbookAirM1.html" class="buybutton"><h4>1399€</h4></a>
+        </div> <!-- Price button linking to product page -->
+      </article>
+      <article class="productfile">
+        <div class="indexProductCard">
+          <a href="RTX3070.html"><img src="../TerreDeGeek/assets/RTX3070/RTX3070transparent.png" class="productPic" alt="RTX3070 sur fond transparent"></a>
+          <a href="RTX3070.html"><h3>Gigabyte GeForce RTX 3070 GAMING OC 8G</h3></a>
+          <p>La carte graphique Gigabyte GeForce RTX 3070 GAMING OC 8G embarque 8 Go de mémoire vidéo de nouvelle génération GDDR6. 
+          Ce modèle overclocké d'usine bénéficie de fréquences de fonctionnement élevées et d'un système de 
+          refroidissement amélioré gage de fiabilité et de performances à long terme.</p>
+        </div>
+        <div class="priceMain">
+          <a href="RTX3070.html" class="buybutton"><h4>859€</h4></a>
+        </div>
+      </article>
+      <article class="productfile">
+        <div class="indexProductCard">
+          <a href="LG27GL850.html"><img src="../TerreDeGeek/assets/LG27GL850/LG27GL850transparent.png" class="productPic" alt="LG27GL850 sur fond transparent"></a>
+          <a href="LG27GL850.html"><h3>LG 27" LED - 27GL850 -B LED Nano IPS </h3></a>
+          <p>Régnez en maître sur le champ de bataille avec le nouveau moniteur de jeu 27GL850-B signé LG ! 
+          A la pointe de la technologie avec sa dalle 27" Nano-IPS combinant affichage sublime et temps de réponse ultra-rapide 
+          de seulement 1 ms, ce moniteur est prêt à vous propulser vers les sommets !</p>
+        </div>
+        <div class="priceMain">
+          <a href="LG27GL850.html" class="buybutton"><h4>499€</h4></a>
+        </div>
+      </article>
     </div>
   </main>
 
   <footer> <!-- Footer with social links in <div> and legals outside -->
     <div class="socials">
       <ul>
-        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a></li>
-        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
-    <a href="mentionslegales.html"><h6>Mentions légales <br>Copyright © 2021 <br>Terre de Geek SARL <br>27000 Evreux</h6></a>
+    <a href="mentionslegales.html"><h6>Mentions légales <br>Copyright © 2021 <br>Terre de Geek SARL <br>27000 Evreux <br>par Axel JARNIGON</h6></a>
   </footer>
 </body>
 
