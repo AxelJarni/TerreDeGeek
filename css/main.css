@@ -45,6 +45,10 @@ html {
 header{
   background-color: #0d1c70;
 }
+.head {
+  display: flex;
+  justify-content: center;
+}
 main{
   margin-bottom: 2em;
 }
@@ -70,18 +74,10 @@ footer a:hover {
 
 .head {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-image: url("../assets/Banner.jpg");
   background-size: cover;
-}
-
-.logo {
-  width: 30%;
-  height: 30%;
-  max-width: 240px;
-  max-height: 240px;
+  height: 20vh;
 }
 
 .menu {
@@ -108,7 +104,7 @@ footer a:hover {
   background-color:#6495ED;
   color:white;
   padding:5px;
-  margin: 0.5em;
+  margin: 0.5em 2vw;
   border-radius: 3px;
 }
 
@@ -116,6 +112,13 @@ footer a:hover {
   display: flex;
   align-items: flex-end;
   margin: 0.5em;
+}
+.searchbutton {
+  border-radius: 3px;
+  color: #0d1c70;
+  font-weight: bold;
+  padding: 0.1em;
+  margin-left: 0.2em;
 }
 
 .productfile { /*Product card in index*/
@@ -136,11 +139,17 @@ footer a:hover {
 }
 
 .productfile img{
-  float: left;
   min-width: 170px;
   min-height: 170px;
   width: 20vw;
   height: auto;
+}
+
+.indexProductCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .indexProductCard a, .mainNoPrice a { /*Page links style*/
@@ -217,6 +226,10 @@ footer a:hover {
 .contactTeamPic {
   width: 80vw;
 }
+.teamPic{
+  width: 50vw;
+  height: auto;
+}
 
 .form {
   margin: 2em;
@@ -245,18 +258,28 @@ input[type=submit]:hover {
   background-color: #405cff;
 }
 
+iframe {
+    width: 80vw; 
+    height: 45vw; /* 100/56.25 = 560/315 = 1.778 */
+    background:red;  
+}
+
 .panels {
   text-align: justify;
   padding: 0 1em;
 }
-
-table, td, th, tr{
+th {
   background-color: #ececec;
-  border: 10px solid white;
+}
+table, td, th, tr{
+  border-bottom: 2px solid black;
   border-collapse: collapse;
   width: 50vw;
+  max-width: 100vw;
   margin: auto;
+  padding: 0.6em;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 iframe {
@@ -329,14 +352,20 @@ h6{
     font-size: 3em;
     margin: 1em;
   }
+  .productfile img{
+    float: left;
+  }
+  .indexProductCard{
+    display: block;
+  }
+  iframe {
+    width: 50vw; 
+    height: 28.12vw; 
+  }
 }
 
 /* For desktop: */
 @media only screen and (min-width: 1024px) {
-  .head {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
   h1 {
     font-size: 5rem;
   }
@@ -345,6 +374,8 @@ h6{
     justify-content: space-between;
     margin: 0em 1em;
   }
+  
+
   .allArticle{ /*Changing style of the product card on index desktop*/
     display: flex;
     flex-direction: row;
@@ -385,7 +416,7 @@ h6{
     justify-content: center;
     align-items: center;
   }
-  .productpageimg{
+  .productpageimg {
     width: 35vw;
     height: auto;
   }
@@ -433,6 +464,7 @@ h6{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    align-content: flex-start;
   }
   .contactTeamPic{
     width: 90%;
@@ -443,5 +475,8 @@ h6{
   .contactDesc a{
     display: flex;
     justify-content: center;
+  } 
+  .contactDesc {
+    margin: 2em 0.5em;
   }
 }
